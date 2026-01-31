@@ -5,8 +5,10 @@ public class Palindrome {
         return false;
     }
     public String reverse(String s) {
-        String n = new String();
-        // your code here
+        String n = "";
+        for (int i = s.length() - 1; i >= 0; i--) {
+            n += s.charAt(i);
+        }
         return n;
     }
 }
